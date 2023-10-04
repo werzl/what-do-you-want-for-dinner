@@ -1,0 +1,12 @@
+{
+	"extends": "@tsconfig/recommended/tsconfig.json",
+	"files": [
+		"index.ts"
+	],
+	"include": ["src/**/*"],
+	"exclude": ["**/*.spec.ts"],
+	"compilerOptions": {
+		"module": "es6",
+		"outDir": "build"
+	}
+}
