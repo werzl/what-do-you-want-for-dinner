@@ -2,12 +2,12 @@
   "name": "what-do-you-want-for-dinner",
   "version": "1.0.0",
   "description": "App to randomly suggest a restaurant near by for dinner.",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "predev": "npm run build",
-    "dev": "node ./build/index.js",
+    "predev": "npm run build && copy .\\src\\Frontend .\\build",
+    "dev": "node ./build/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +22,9 @@
   "homepage": "https://github.com/werzl/what-do-you-want-for-dinner#readme",
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.3",
+    "@types/express": "^4.17.18",
     "eslint": "^8.50.0",
+    "express": "^4.18.2",
     "typescript": "^5.2.2"
   }
 }
